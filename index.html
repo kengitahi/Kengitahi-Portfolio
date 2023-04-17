@@ -54,7 +54,7 @@
             <div class="about-img">
                 <img src="./img/me.jpg" alt="kennedy">
             </div>
-            <div>
+            <div class="about-info">
                 <p class="about-intro">Hi, Im Kennedy,</p>
                 <p class="section-text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
@@ -129,7 +129,8 @@
         </h3>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="./img/portfolio-imgs/gym-app.png" alt="Fitness" class="portfolio-img">
+                <img src="./img/portfolio-imgs/gym-app.png" alt="Fitness" class="portfolio-img"
+                    onclick="openModal();currentSlide(1)">
                 <h2 class="portfolio-title">Fitness Club</h2>
                 <h3 class="portfolio-description"> A React app that allows you to search gym exercises</h3>
                 <p class="portfolio-tech">React, NextJs, HTML, CSS, JavaScript, Rapid API (Gym Exercises)</p>
@@ -137,7 +138,8 @@
                     Project</a>
             </div>
             <div class="portfolio-item">
-                <img src="./img/portfolio-imgs/sneakers-app.png" alt="Sneakers" class="portfolio-img">
+                <img src="./img/portfolio-imgs/sneakers-app.png" alt="Sneakers" class="portfolio-img"
+                    onclick="openModal();currentSlide(2)">
                 <h2 class="portfolio-title">Sneakers Product Page</h2>
                 <h3 class="portfolio-description">An ecommerce checkout page for a sneakers company</h3>
                 <p class="portfolio-tech">HTML, CSS, JavaScript</p>
@@ -145,7 +147,8 @@
                     Project</a>
             </div>
             <div class="portfolio-item">
-                <img src="./img/portfolio-imgs/ovtgenmedia-app.png" alt="Ovtgen Media" class="portfolio-img">
+                <img src="./img/portfolio-imgs/ovtgenmedia-app.png" alt="Ovtgen Media" class="portfolio-img"
+                    onclick="openModal();currentSlide(3)">
                 <h2 class="portfolio-title">Ovtgen Media</h2>
                 <h3 class="portfolio-description">Youtube clone with all functionality including search and single pages
                 </h3>
@@ -154,7 +157,8 @@
                     Project</a>
             </div>
             <div class="portfolio-item">
-                <img src="./img/portfolio-imgs/antiques-app.png" alt="Siboria" class="portfolio-img">
+                <img src="./img/portfolio-imgs/antiques-app.png" alt="Siboria" class="portfolio-img"
+                    onclick="openModal();currentSlide(4)">
                 <h2 class="portfolio-title">Siboria landing page</h2>
                 <h3 class="portfolio-description">Landing page for an antique website</h3>
                 <p class="portfolio-tech">HTML, CSS, JavaScript</p>
@@ -162,7 +166,8 @@
                     Project</a>
             </div>
             <div class="portfolio-item">
-                <img src="./img/portfolio-imgs/bayut-app.png" alt="Bayut" class="portfolio-img">
+                <img src="./img/portfolio-imgs/bayut-app.png" alt="Bayut" class="portfolio-img"
+                    onclick="openModal();currentSlide(5)">
                 <h2 class="portfolio-title">Bayut Properties</h2>
                 <h3 class="portfolio-description">A real estate websoites that lets you find property in the UAE</h3>
                 <p class="portfolio-tech">React, NextJs, HTML, CSS, JavaScript, Rapid API (Bayut API)</p>
@@ -173,7 +178,7 @@
     </section>
     <section class="container" id="contact">
         <div class="thirds">
-            <div>
+            <div class="contact-intro">
                 <h2 class="section-heading alt">
                     I Give Businesses </br>The Online Presense They Deserve.
                 </h2>
@@ -208,7 +213,33 @@
             </p>
         </div>
     </footer>
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="./img/portfolio-imgs/gym-fullpage.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./img/portfolio-imgs/sneakers-fullpage.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./img/portfolio-imgs/ovtgen-fullpage.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="./img/portfolio-imgs/antiques-fullpage.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="./img/portfolio-imgs/realestate-fullpage.png" style="width:100%">
+            </div>
+        </div>
+    </div>
     <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
